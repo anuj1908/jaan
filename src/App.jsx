@@ -28,6 +28,7 @@ function App() {
         <Frame
           image={story[current].image}
           text={story[current].text}
+          index={current}
           onNext={() => {
             if (current === story.length - 1) {
               setShowQuestion(true);

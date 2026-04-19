@@ -1,4 +1,15 @@
-const Frame = ({ image, text, onNext }) => {
+import { useEffect } from "react";
+import { story } from "../data/story";
+
+const Frame = ({ image, text, onNext, index = 0 }) => {
+  useEffect(() => {
+    const next = story[index + 1];
+    if (next?.image) {
+      const img = new Image();
+      img.src = next.image;
+    }
+  }, [index]);
+
   return (
     <div className="relative flex-1 flex items-center justify-center px-10 py-16 overflow-hidden">
 
@@ -15,6 +26,9 @@ const Frame = ({ image, text, onNext }) => {
             <img
               src={image}
               alt="memory"
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
+              fetchpriority={index === 0 ? "high" : "auto"}
               className="w-full h-full object-contain rounded-[2.5rem]"
             />
           </div>
