@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-import img1 from "img1.png";
-import img2 from "img2.jpg";
-import img3 from "img3.jpg";
-import img4 from "img4.png";
-=======
-import img1 from "img1.JPG";
-import img2 from "img2.jpg";
-import img3 from "img3.jpg";
-import img4 from "img4.JPG";
->>>>>>> f6f72a1d27bdc83249b120d1b13e5450dcf9599e
-import img5 from "img5.png";
+import img1 from "../assets/images/img1.png";
+import img2 from "../assets/images/img2.jpg";
+import img3 from "../assets/images/img3.jpg";
+import img4 from "../assets/images/img4.png";
+import img5 from "../assets/images/img5.png";
 
 export const story = [
   {
