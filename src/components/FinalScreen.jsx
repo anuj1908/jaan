@@ -1,6 +1,6 @@
 // export default FinalScreen;
 import { useEffect, useState } from "react";
-import celebration from "../assets/images/celebration.png";
+import celebration from "../assets/images/celebration.jpg";
 
 const FinalScreen = ({ onReplay }) => {
   const [show, setShow] = useState(false);
@@ -21,6 +21,8 @@ const FinalScreen = ({ onReplay }) => {
         <img
           src={celebration}
           alt="celebration"
+          loading="lazy"
+          decoding="async"
           className="w-full max-h-[300px] object-contain mb-10"
         />
 
