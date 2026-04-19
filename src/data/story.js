@@ -4,6 +4,7 @@ import img3 from "../assets/images/img3.jpg";
 import img4 from "../assets/images/img4.png";
 import img5 from "../assets/images/img5.png";
 
+
 export const story = [
   {
     image: img1,
